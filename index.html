@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <title>Sign In</title>
+  <style>
+  body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+  }
+  
+</style> 
+</head>
+
+<style>
+.sidebox {
+  height: 100%;
+  width: 80%;
+  background-image:url('https://fs.utoledo.edu/adfs/portal/illustration/illustration.jpg');
+}
+
+.title{
+  font-size: 2em;
+  font-weight: lighter;
+  font-family: "Segoe UI Light" , "Segoe" , "SegoeUI-Light-final", Tahoma, Helvetica, Arial, sans-serif;
+  width: 300px;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  margin-top: 60%
+}
+
+.enterbox{
+
+  position: absolute;
+  right: 0px;
+  background-color:white;
+  height: 100%;
+  width: 30%;
+}
+
+.unamebox {
+  margin-left: 30%;
+  right: 100px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.passbox {
+  margin-left:30%;
+  right: 100px;
+  width: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+.new_account{
+  margin-left:30%;
+  right: 100px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.input{
+  margin-top: 20px;
+	margin-left: 30%;
+}
+</style>
+
+  <body>
+    <div class="sidebox" >
+		<div class="enterbox">
+			<div class="title">University Of Toledo</div>
+			<form action = "login.php" method = "post">
+				<input type="text" name="username" class="unamebox" placeholder="Username">
+				<input type="password" name="password" class="passbox" placeholder="Password" autocomplete="off">
+				<input class="input" type="submit"><br>
+				<div class="new_account">
+					<a href="new_account.php">New account</a>
+				</div>
+			</form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
